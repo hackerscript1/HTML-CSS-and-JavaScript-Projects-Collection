@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.png">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fas fa-home"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fas fa-search"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <i class="fas fa-book"></i>
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you up to date on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fas fa-chevron-left hide"></i>
+                    <i class="fas fa-chevron-right hide"></i>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge">
+                        <i class="fas fa-download" style="margin-right: 0.5rem;"></i> 
+                        Install App
+                    </button>
+                    <i class="fas fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="/img/card1img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+            </div>
+
+            <h2>Tranding now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="/img/card2img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+                <div class="card">
+                    <img src="/img/card3img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+                <div class="card">
+                    <img src="/img/card4img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+            </div>
+
+            <h2>Featured playlists</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="/img/card5img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+                <div class="card">
+                    <img src="/img/card6img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+                <div class="card">
+                    <img src="/img/card1img.jpeg" alt="album1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks ...</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="/img/Daylight.jpg" alt="album1" class="album-img">
+                <div class="album-info">
+                    <p class="album-title">Daylight</p>
+                    <p class="album-author">David Kushner</p>
+                </div>
+                <i class="far fa-heart" style="margin-right: 1rem;"></i>
+                <i class="fas fa-ellipsis-v" style="margin-right: 1rem;"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <i class="fas fa-random player-icon"></i>
+                    <i class="fas fa-step-backward player-icon"></i>
+                    <i class="fas fa-play player-icon" style="opacity: 1; transform: scale(1.1);"></i>
+                    <i class="fas fa-step-forward player-icon"></i>
+                    <i class="fas fa-redo player-icon"></i>
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time">0:00</span>
+                    <input type="range" class="progress-bar">
+                    <span class="total-time">3:45</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" style="width: 100px; margin: 0 1rem;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
